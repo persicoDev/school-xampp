@@ -1,28 +1,72 @@
 <html>
 <head>
     <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
 </head>
 <body>
-    <form action="login.php" method="POST">
-            Username:
-            <input type="text" name="user">
-            <br><br>
-            Email:
-            <input type="text" name="email">
-            <br><br>
-            Sesso:
-            <input type="radio" name="sesso" value="maschio">Maschio
-            <input type="radio" name="sesso" value="femmina">Femmina
-            <br><br>
-            passioni:
-            <select name="sport"> 
-            <option value="bonsai">bonsai</option>
-            <option value="film">Film</option>
-            <option value="lettura">Lettura</option>
-            </select>
-            <br><br>
-            <input type="submit" value="accedi">
-            <input type="reset" value="annulla">
-    </form>
+    <!-- <div class="box">
+        <form action="login.php" method="POST">
+            <div class="login-field">
+                <i class="login-icon fas fa-user"></i>
+                <input type="text" name="user" class="login-input" placeholder="Username">
+            </div>
+                <p>inserisci l'Email:</p> 
+                <input type="text" name="email">
+                <p>inserisci il Sesso:</p> 
+                
+                <input type="radio" name="sesso" value="maschio">Maschio
+                <input type="radio" name="sesso" value="femmina">Femmina
+                <p>scegli le tue passioni:</p> 
+                <input type="checkbox" name="passioni" value="bonsai">bonsai
+                <input type="checkbox" name="passioni" value="film">Film
+                <input type="checkbox" name="passioni" value="lettura">Lettura
+                <br><br>
+                <input type="submit" value="registrati">
+                <input type="reset" value="annulla">
+        </form>
+    </div> -->
+    <div class="container">
+        <div class="screen">
+            <div class="screen__content">
+                <form class="login" action="login.php" method="POST">
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input type="text" class="login__input" name="user" placeholder="Username">
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-envelope "></i>
+                        <input type="text" class="login__input" name="email" placeholder="Email">
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-lock"></i>
+                        <input type="password" class="login__input" name="password" placeholder="Password">
+                    </div>
+                    <div class="login__field">
+                        <input id="r1" type="radio" name="sesso" value="maschio"> Maschio
+                        <input id="r1" type="radio" name="sesso" value="femmina"> Femmina	
+                    </div>
+                    <div class="login__field">
+                        <p>scegli le tue passioni</p>
+                        <br>
+                        <input type="checkbox" name="passioni" value="bonsai"> bonsai
+                        <input type="checkbox" name="passioni" value="film"> Film
+                        <input type="checkbox" name="passioni" value="lettura"> Lettura	
+                    </div>  			
+                    <button type="submit" class="button login__submit">
+                        <span class="button__text">Registrati ora</span>
+                        <i class="button__icon fas fa-chevron-right"></i>
+                    </button>
+                    
+                </form>
+            </div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>		
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>		
+        </div>
+    </div>
 </body>
 </html>
